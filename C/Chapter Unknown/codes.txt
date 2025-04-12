@@ -1,0 +1,76 @@
+#include <stdio.h>
+int maina()
+{
+    float t; //t= temperature
+    printf("Enter Temperature in Celsius: ");
+    scanf("%f", &t);
+    printf("The temperature in Kelvin scale is %.2fK and in Fahrenheit scale is %.2f degree F", t+273, (5*(t-32))/9);
+    return 0;
+}
+int mainb()
+{
+    int amt;
+    printf("Enter amount in Indian Rupees: ");
+    scanf("%d", &amt);
+    char x;
+    printf("In which currency you want to convert? \nPress 'd' for Dollar \nPress 'e' for Euro \n\n");
+    scanf(" %c", &x);
+    if(x=='d')
+            printf("Entered amount in dollar is: $%.2f", amt*82.89);
+    else if(x=='e')
+        printf("Entered amount in euro is: %.2f", amt*89.65);
+    return 0;
+}
+
+int mainc()
+{
+    float l;
+    printf("Enter length in metre(m): ");
+    scanf("%f", &l);
+    char x;
+    printf("In which unit do you want to convert? press \n 'k' for Km \n 'c' for cm \n 'm' for mm \n 'i' for inch\n 'f' for feet\n");
+    scanf(" %c", &x);
+    if(x=='k')
+        printf("Entered length in km is: %f", l/1000);
+    else if(x=='c')
+        printf("Entered length in cm is: %f", l*100);
+        else if(x=='m')
+        printf("Entered length in mm is: %f", l*1000);
+        else if(x=='i')
+        printf("Entered length in inch is: %.2f", l*39.37);
+        else if(x=='f')
+        printf("Entered length in feet is: %.2f", l*3.28);
+        return 0;
+}
+int maind()
+{
+    int v;
+    printf("Enter volume in cc: ");
+    scanf("%d", &v);
+    char x;
+    printf("In which you want to convert? SI(s) or CGS(c): ");
+    scanf(" %c", &x);
+    if (x=='s')
+        printf("Entered volume in SI unit is: %d cubic metre", v*1000000);
+        else if(x=='c')
+        printf("Entered volume in CGS unit is: %dL", v*1000);
+    return 0;
+}
+int maine()
+{
+    int m; //m= mass
+    printf("Enter mass in g: ");
+    scanf("%d", &m);
+    char x;
+    printf("In which you want to convert? \n Kilogram(k) \n Milligram(m) \n Pound(p) \n Carat(c)\n");
+    scanf(" %c", &x);
+    if(x=='k')
+        printf("Mass in Kilogram is: %.3fkg", (float)m/1000);
+    else if(x=='m')
+        printf("Mass in Milligram is: %dmg", m*1000);
+    else if(x=='p')
+        printf("Mass in pound is: %f", m*0.002205);
+    else if(x=='c')
+        printf("Mass in carat is: %.2f", m*5);
+        return 0;
+}

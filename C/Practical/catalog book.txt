@@ -1,0 +1,12 @@
+a) * triangle of desired length (forward)
+b) * triangle of desired length (backward)
+c) 1-2-3 triangle
+d) Floyd's Triangle (forward)
+e) Floyd's Triangle (backward)
+f) Fibonacci series
+g) Armstrong number
+h) pyramid
+i) backside triangle
+j) Numerical pyramid
+k) Palindrome Numbers
+l) Prime Numbers
